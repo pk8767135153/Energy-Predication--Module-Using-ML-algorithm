@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Input Form</title>
+    <link rel="stylesheet" href="./static/css/predict.css">
+
+    
+</head>
+<body>
+    <div class="container">
+
+        <form action="/submit" method="POST">
+            <h2>Fill The Data</h2>
+            <fieldset> 
+                <label for="building_types">Building Types</label><br>
+                <input type="text" id="building_types" name="building_types"  placeholder ="Residential/Commercial/Industrial" required><hr>
+
+                <label for="square_footage">Square Footage</label><br>
+                <input type="text" id = "square_footage" name="square_footage" placeholder ="Number format" required><hr>
+
+                <label for="number_of_occupants">Number Of Occupants</label><br>
+                <input type="text" id="number_of_occupants" name="number_of_occupants" placeholder ="Number format" required><hr>
+
+                <label for="no_of_appliances">Number Of Appliances</label><br>
+                <input type="text" id = "no_of_appliances" name="no_of_appliances" placeholder ="Number format" required><hr>
+
+                <label for="avg_temperature">Temperature</label><br>
+                <input type="text" id="avg_temperature" name="avg_temperature" placeholder ="Number format" required><hr>
+
+                <label for="week_days">Day</label><br>
+                <input type="text" id = "week_days" name="week_days" placeholder ="Enter Day (text)" required><hr>
+
+                <input type="submit" value="Submit" action="POST">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

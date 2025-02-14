@@ -1,0 +1,106 @@
+body {
+    padding-top: 0px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+    margin: 5px;
+}  
+h2{
+    padding: 5px;
+    /* font-weight: 500; */
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+} 
+fieldset{
+    justify-items: center;
+}
+.container {
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input[type="text"] {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+}
+input[type="text"]:hover{
+    border: 2px solid red;
+
+}
+input[type="submit"] {
+    padding: 10px;
+    width: 100px;
+    font-size: medium;
+    font-weight: 600;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #6fdb35;
+}
+hr {
+  border: 0;
+  height: 2px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient color */
+  margin: 20px 0; /* Margin to create space above and below the line */
+}
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    body {
+        padding-top: 10px;
+        height: 150vh;
+        flex-direction: column;
+    }
+    .container {
+        max-width: 90%;
+        padding: 10px;
+    }
+    input[type="text"],
+    input[type="submit"] {
+        width: 100%;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%;
+        padding: 5px;
+    }
+    input[type="text"],
+    input[type="submit"] {
+        width: 100%;
+        padding: 8px;
+    }
+    input[type="submit"] {
+        font-size: small;
+    }
+}

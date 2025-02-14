@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed Back Form</title>
+    <link rel="stylesheet" href="./static/css/feadback.css">
+</head>
+<body>
+    <div class="feedback">
+        <form action="https://api.web3forms.com/submit" method="POST" class="feedback_left">
+            <div class="feedback_title">
+                <h2>Get In Tounch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="55b994cd-093b-46d2-803c-437abbe3223a">
+
+            <input type="text" name="Name" placeholder="Your Name" class="feedbackinput" required>
+
+            <input type="email" name="Email" placeholder="Your Email" class="feedbackinput" required>
+
+            <textarea name="Message" placeholder="Your Message..." class="feedbackinput" required></textarea>
+            <button type="Submit" class="feedback_left_button">Submit</button>
+        </form>
+        <div class="feedback_right">
+            <img src="./static/images/feedback.png" alt="Right Image">
+        </div>
+    </div>
+</body>
+</html>
